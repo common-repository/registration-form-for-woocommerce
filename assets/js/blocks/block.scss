@@ -1,0 +1,163 @@
+.tgwcfb-label {
+	display: block;
+
+	&.required:after {
+		content: " *";
+		color: red;
+	}
+}
+
+.components-base-control__help {
+	font-style: italic !important;
+}
+
+.tgwcfb-input {
+	width: 100%;
+	padding: 4px !important;
+}
+
+.tgwcfb-select {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.form-row {
+	margin: 1em 0;
+}
+
+.input-description {
+	margin-top: 0;
+	display: block;
+}
+
+.input-wrapper {
+	display: flex;
+	align-items: center;
+
+	input[type="range"] {
+		flex-grow: 1;
+	}
+
+	input[type="number"] {
+		width: 100px;
+	}
+}
+
+.tgwcfb-control {
+	.components-button-group {
+		display: block;
+	}
+
+	> .components-base-control__field {
+		> .components-base-control__label {
+			margin-bottom: 8px;
+			display: inline-block;
+		}
+		> .components-base-control {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.block-editor-block-list__layout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: row;
+	column-gap: 10px;
+	max-width: 650px;
+	margin: auto;
+	padding: 0 !important;
+
+	> .field-width-100,
+	.block-list-appender {
+		flex: 0 0 100%;
+	}
+
+	> .field-width-50 {
+		flex: 0 0 calc(50% - 5px);
+	}
+
+	&.is-root-container .wp-block[class*="field-width"] {
+		margin: 0 !important;
+	}
+}
+
+.tgwcfb-options {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	.tgwcfb-option {
+		display: flex;
+		align-items: center;
+		padding-bottom: 1px;
+
+		.tgwcfb-option-input {
+			flex-grow: 1;
+			border: none;
+			outline: none;
+			padding: 0 8px;
+			line-height: 2;
+			min-height: 30px;
+
+			&:hover {
+				outline: 1px solid #2271b1;
+			}
+
+			&:focus,
+			&:focus-within {
+				outline: none;
+				border: 1px solid #8c8f94;
+			}
+		}
+	}
+}
+
+[data-type="tgwcfb/user-roles"] .form-row {
+	position: relative;
+
+	.loading {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: grid;
+		place-items: center;
+		background: rgba(0, 0, 0, 0.04);
+		z-index: 1;
+	}
+}
+
+.components-base-control {
+	margin-bottom: 24px;
+}
+
+.tgwcfb-shortcode-wrapper {
+	display: flex;
+	margin-right: 12px;
+
+	> input {
+		padding: 0 6px;
+		margin: 0;
+		border-color: #dee0e9;
+		background-color: #f0f1f5;
+		border-radius: 4px 0 0 4px;
+	}
+
+	> button {
+		border-radius: 0 4px 4px 0;
+
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+[class*="tgwcfb_form_"] {
+	.is-root-container {
+		margin: auto !important;
+		max-width: 650px !important;
+	}
+}

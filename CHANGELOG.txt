@@ -1,0 +1,18 @@
+== Changelog ==
+
+= 1.0.3.1 - 23-10-2024 =
+* Fix 	  - Stable tag and typos in readme.txt.
+
+= 1.0.3   - 23-10-2024 =
+* Feature - Change recipient for admin email.
+* Fix     - Deactivate free version if the pro version is activated.
+
+= 1.0.2 - 10-07-2024 =
+* Tweak - Changed readme txt.
+
+= 1.0.1 - 24-05-2024 =
+* Tweak - Tag Changed.
+* Fix 	- Numbering of screenshot.
+
+= 1.0.0 - 22-05-2024 =
+* Initial release
